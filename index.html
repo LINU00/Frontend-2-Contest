@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Startup Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: white;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #f7a600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 18px;
+      color: black;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 60px 40px 40px;
+    }
+
+    .hero-text {
+      max-width: 55%;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .hero-text button {
+      margin-top: 20px;
+      background-color: #f7a600;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    /* Contact Form Section */
+    .contact-section {
+      padding: 40px 0;
+    }
+
+    .contact-section h2 {
+      color: #f7a600;
+      font-size: 28px;
+      margin-left: 40px;
+    }
+
+    .form {
+      margin: 20px 40px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form input {
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: 1px solid #f7a600;
+      background-color: transparent;
+      color: white;
+      width: 100%;
+    }
+
+    .form ::placeholder {
+      color: #f7a600;
+    }
+
+
+    .form-fix {
+      margin-right: 40px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-direction: row; /* Stack the inputs */
+      gap: 15px;
+    }
+
+    .form button {
+      margin-top: 20px;
+      background-color: #f7a600;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      align-self: center;
+    }
+
+    /* Table */
+    table {
+      width: 95%;
+      border-collapse: collapse;
+      margin: 50px auto;
+      color: #f7a600; /* Changed from white to yellow */
+    }
+
+    table, thead {
+      border: 1px solid #f7a600;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      font-weight: normal;
+    }
+
+    th {
+      background-color: #000000;
+      color: #f7a600;
+    }
+
+    tr:last-child {
+      background-color: #f7a600;
+      color: black;
+    }
+
+    th, td {
+  border-left: 1px solid #f7a600;
+  border-right: 1px solid #f7a600;
+  /* Remove top/bottom borders */
+  border-top: none;
+  border-bottom: none;
+  padding: 15px;
+  text-align: left;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Start<span style="text-decoration: underline;">up</span></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Startup Landing Page</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium fugit, hic, culpa distinctio a perspiciatis eos alias consequuntur ratione cumque velit voluptatum maiores. Et, sit. Unde id facilis perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deleniti ea animi pariatur unde incidunt ipsam exercitationem reiciendis maxime sit. Dolores natus commodi consequatur perspiciatis magni consectetur aliquam, repudiandae delectus!
+      </p>
+      <button>Login</button>
+    </div>
+    <img src="./jeff-1.png" alt="Person">
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="form">
+      <div class="form-fix">
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="form-fix">
+        <input type="text" placeholder="Name" required />
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Mobile Number" required />
+        <input type="text" placeholder="City" required />
+      </div>
+      <button type="submit">Submit Form</button>
+    </form>
+  </section>
+
+  <!-- Table Section -->
+  <table>
+    <thead>
+      <tr>
+        <th>SNO.</th>
+        <th>Startup Name</th>
+        <th>Startup Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>WowIndia</td>
+        <td>A startup with WOW Ideas.</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum Text</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum Text</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum Text</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum Text</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum Text</td>
+      </tr>
+      <tr>
+        <td>00.</td>
+        <td>Final Footer</td>
+        <td>Lorem Ipsum Text</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
